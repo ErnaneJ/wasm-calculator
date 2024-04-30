@@ -18,8 +18,7 @@ float subtract(float x, float y) {
 
 EMSCRIPTEN_KEEPALIVE
 float divide(float x, float y) {
-  if (y == 0) {
+  if (y == 0)
     return 0.0 / 0.0;
-  }
   return x / y;
 }

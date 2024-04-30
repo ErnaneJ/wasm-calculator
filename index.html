@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Calculator - WebAssembly</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <script src="./scripts/wasm.js"></script>
+    <script src="./scripts/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input type="text" id="inputBox" placeholder="0" />
+        <div>
+          <button class="button operator">AC</button>
+          <button class="button operator">DEL</button>
+          <button class="button operator">*</button>
+          <button class="button operator">/</button>
+        </div>
+        <div>
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button operator">*</button>
+        </div>
+        <div>
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button operator">-</button>
+        </div>
+        <div>
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button operator">+</button>
+        </div>
 
-  <script src="./scripts/wasm.js"></script>
-  <script src="./scripts/app.js"></script>
-</head>
+        <div>
+          <button class="button">00</button>
+          <button class="button">0</button>
+          <button class="button">.</button>
+          <button class="button equalBtn">=</button>
+        </div>
+      </div>
+    </div>
 
-<body>
-  <table>
-    <tr>
-      <td colspan="4"><input id="txtInput" style="text-align: right;" type="text" /></td>
-    </tr>
-    <tr>
-      <td colspan="4"><span id="spanOutput" id="output"></span></td>
-    </tr>
-    <tr>
-      <td colspan="4"><input type="button" value="Clear" onclick="clearAll()" /></td>
-    </tr>
-    <tr>
-      <td><input type="button" value="+" onclick="setOperation(this)" /></td>
-      <td><input type="button" value="-" onclick="setOperation(this)" /></td>
-      <td><input type="button" value="*" onclick="setOperation(this)" /></td>
-      <td><input type="button" value="/" onclick="setOperation(this)" /></td>
-    </tr>
-    <tr>
-      <td><input type="button" value="1" onclick="setArgument(this)" /></td>
-      <td><input type="button" value="2" onclick="setArgument(this)" /></td>
-      <td><input type="button" value="3" onclick="setArgument(this)" /></td>
-      <td><input type="button" value="4" onclick="setArgument(this)" /></td>
-    </tr>
-    <tr>
-      <td><input type="button" value="5" onclick="setArgument(this)" /></td>
-      <td><input type="button" value="6" onclick="setArgument(this)" /></td>
-      <td><input type="button" value="7" onclick="setArgument(this)" /></td>
-      <td><input type="button" value="8" onclick="setArgument(this)" /></td>
-    </tr>
-    <tr>
-      <td><input type="button" value="9" onclick="setArgument(this)" /></td>
-      <td><input type="button" value="0" onclick="setArgument(this)" /></td>
-      <td><input type="button" value="=" onclick="getResult()" /></td>
-      <td></td>
-    </tr>
-  </table>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
