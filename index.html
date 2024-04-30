@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="./scripts/wasm.js"></script>
+  <script src="./scripts/app.js"></script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td colspan="4"><input id="txtInput" style="text-align: right;" type="text" /></td>
+    </tr>
+    <tr>
+      <td colspan="4"><span id="spanOutput" id="output"></span></td>
+    </tr>
+    <tr>
+      <td colspan="4"><input type="button" value="Clear" onclick="clearAll()" /></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="+" onclick="setOperation(this)" /></td>
+      <td><input type="button" value="-" onclick="setOperation(this)" /></td>
+      <td><input type="button" value="*" onclick="setOperation(this)" /></td>
+      <td><input type="button" value="/" onclick="setOperation(this)" /></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" onclick="setArgument(this)" /></td>
+      <td><input type="button" value="2" onclick="setArgument(this)" /></td>
+      <td><input type="button" value="3" onclick="setArgument(this)" /></td>
+      <td><input type="button" value="4" onclick="setArgument(this)" /></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="5" onclick="setArgument(this)" /></td>
+      <td><input type="button" value="6" onclick="setArgument(this)" /></td>
+      <td><input type="button" value="7" onclick="setArgument(this)" /></td>
+      <td><input type="button" value="8" onclick="setArgument(this)" /></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="9" onclick="setArgument(this)" /></td>
+      <td><input type="button" value="0" onclick="setArgument(this)" /></td>
+      <td><input type="button" value="=" onclick="getResult()" /></td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>
