@@ -25,5 +25,12 @@ async function loadWasm(filePath = 'main.wasm') {
 }
 
 (async () => {
-  window.wasmExports = await loadWasm('../build/arithmetic.wasm');
+  const href = window.location.href;
+  const production = href.includes('github.io');
+
+  if(production) {
+    window.wasmExports = await loadWasm('https://ernanej.github.io/wasm-calculator/build/arithmetic.wasm');
+  }else{
+    window.wasmExports = await loadWasm('../build/arithmetic.wasm');
+  }
 })();
