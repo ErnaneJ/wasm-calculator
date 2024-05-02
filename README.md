@@ -92,9 +92,7 @@ async function loadWasm(filePath) {
 
 ### Explanation of C Code
 
-The C code exclusively implements basic mathematical operations (addition, multiplication, division, and subtraction), with all functions marked with `EM
-
-SCRIPTEN_KEEPALIVE`, allowing them to be exported to JavaScript and used in the web application. The complete code can be found in [`arithmetic.c`](./src/arithmetic.c).
+The C code exclusively implements basic mathematical operations (addition, multiplication, division, and subtraction), with all functions marked with `EMSCRIPTEN_KEEPALIVE`, allowing them to be exported to JavaScript and used in the web application. The complete code can be found in [`arithmetic.c`](./src/arithmetic.c).
 
 ```c
 #include <emscripten.h>
