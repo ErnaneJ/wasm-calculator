@@ -1,4 +1,4 @@
-**WebAssembly Calculator - _study_**
+# WebAssembly Calculator - _study_
 
 A simple web calculator application using WebAssembly for basic mathematical operations. Utilizing C and JavaScript to create a tool capable of performing addition, multiplication, division, and subtraction.
 
