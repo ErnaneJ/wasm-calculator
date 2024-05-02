@@ -1,5 +1,4 @@
 #include <emscripten.h>
-#include <stdio.h>
 
 EMSCRIPTEN_KEEPALIVE
 float add(float x, float y) {
