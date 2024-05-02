@@ -36,14 +36,15 @@ function evaluateOperation(operation){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  let isOk = true;
   const input = document.getElementById('inputBox');
   const buttons = document.querySelectorAll('button');
-  
   Array.from(buttons).forEach(button => {
     button.addEventListener('click', (e) =>{
       if (e.target.innerHTML == '=') {
         const { status, msg: result } = evaluateOperation(input.value);
         
+        isOk = status;
         if(status) input.value = operation = result;
 
         input.value = result;
@@ -52,8 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if(e.target.innerHTML == 'DEL'){
         input.value = input.value.substring(0, input.value.length-1);
       } else{
+        if(!isOk) input.value = "";
         input.value += e.target.innerHTML;
-        input.value = input.value.replace(/([-+*/])+/g, '$1');
+        input.value = input.value.replace(/([-+*/.])+/g, '$1');
         if(isNaN(parseFloat(input.value.charAt(0)))){
           input.value = '0' + input.value;
         }
