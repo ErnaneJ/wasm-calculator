@@ -6,7 +6,7 @@ A simple web calculator application using WebAssembly for basic mathematical ope
 
 ### Introduction to WebAssembly (WASM)
 
-WebAssembly (WASM) is a revolutionary binary instruction format designed to serve as a portable compilation target for high-level programming languages such as C, C++, and Rust. It was developed with the aim of enabling these languages to be efficiently executed within web browsers.
+WebAssembly (WASM) is a binary instruction format designed to serve as a portable compilation target for programming languages such as C, C++, and Rust. It was developed with the aim of enabling these languages to be efficiently executed within web browsers.
 
 Unlike traditional scripting languages like JavaScript, which are interpreted by browsers, WebAssembly is compiled ahead of time and can be executed quickly and efficiently by browsers. This means that web applications, like the one in this repository, can run code written in languages such as C or Rust with near-native performance.
 
