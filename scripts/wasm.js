@@ -12,7 +12,7 @@ const asmLibraryArg = {
 
 const wasmInfo = { 'env': asmLibraryArg, 'wasi_snapshot_preview1': asmLibraryArg };
 
-async function loadWasm(filePath = 'main.wasm') {
+async function loadWasm(filePath) {
   try {
     const response = await fetch(filePath);
     const bytes    = await response.arrayBuffer();
