@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Calculator - WebAssembly</title>
+    <meta name="description" content="A web calculator using WebAssembly for simple mathematical operations. Using C and JavaScript to create a tool capable of performing addition, multiplication, division and subtraction directly in the browser.">
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta itemprop="name" content="Calculator - WebAssembly">
+    <meta itemprop="description" content="A web calculator using WebAssembly for simple mathematical operations. Using C and JavaScript to create a tool capable of performing addition, multiplication, division and subtraction directly in the browser.">
+    <meta itemprop="image" content="./assets/preview.png">
+
+    <meta property="og:url" content="https://ernanej.github.io/wasm-calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calculator - WebAssembly">
+    <meta property="og:description" content="A web calculator using WebAssembly for simple mathematical operations. Using C and JavaScript to create a tool capable of performing addition, multiplication, division and subtraction directly in the browser.">
+    <meta property="og:image" content="./assets/preview.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calculator - WebAssembly">
+    <meta name="twitter:description" content="A web calculator using WebAssembly for simple mathematical operations. Using C and JavaScript to create a tool capable of performing addition, multiplication, division and subtraction directly in the browser.">
+    <meta name="twitter:image" content="./assets/preview.png">
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
     <link rel="stylesheet" href="./styles/index.css" />
-    <title>Calculator - WebAssembly</title>
 
     <script src="./scripts/wasm.js"></script>
     <script src="./scripts/app.js"></script>
@@ -15,9 +35,8 @@
       <div class="calculator">
         <input type="text" id="inputBox" placeholder="0" />
         <div>
-          <button class="button operator">AC</button>
+          <button class="button operator clearBtn">AC</button>
           <button class="button operator">DEL</button>
-          <button class="button operator">*</button>
           <button class="button operator">/</button>
         </div>
         <div>
@@ -47,7 +66,6 @@
         </div>
       </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
+  <!-- github.com/ErnaneJ/wasm-calculator -->
 </html>
